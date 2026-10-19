@@ -18,20 +18,70 @@
 }
 
 body {
-    background: #111827;
-    color: #fff;
+  margin: 0;
 }
 
-p {
-    font-family: "Roboto Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 100vh;
+  background: #ffffff;
+  color: #111827;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 16px;
 }
 
-.under-construction {
-  text-align: center;
+.header-links {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background: #111827;
+}
+
+.header-links a {
+  margin: 1rem;
+  color: #F75000;
+}
+
+.header-links a:hover {
+  color: #f8d0bd;
+}
+
+.header-links a:visited {
+  color: #f8fafc;
+}
+
+main {
+  flex-basis: 80%;
+  margin: 2rem;
+}
+
+.main-eyecatcher {
+  max-width: 40%;
+  margin: auto;
+}
+
+.main-eyecatcher h1 {
+  margin-bottom: 1rem;
+  font-size: 2.25rem;
+  color: #F75000;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 100,
+    "WONK" 1;
+}
+
+.footer-content {
+  margin: 1rem;
+  justify-content: flex-end;
+  justify-self: flex-end;
 }
