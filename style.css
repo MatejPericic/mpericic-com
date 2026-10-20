@@ -61,6 +61,13 @@ main {
     "WONK" 1;
 }
 
+.main-eyecatcher img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
 .footer-content {
   margin: 1rem;
   justify-content: flex-end;
