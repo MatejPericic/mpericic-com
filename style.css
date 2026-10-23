@@ -51,43 +51,6 @@ main {
     max-width: 50em;
 }
 
-.sidebar {
-    background-color: #e7ccc0;
-    padding: 0 2%;
-    flex: 1;
-    flex-basis: 10%;
-    box-sizing: border-box;
-}
-
-
-.sidebar h2 {
-    font-weight: 600;
-    font-size: 1.5em;
-    margin-bottom: 10%;
-    color: #bb4610;
-}
-
-.sidebar-nav {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: auto 0%;
-    position: sticky;
-    top: 0;
-}
-
-.sidebar-nav ul,
-.sidebar-nav li {
-    font-family: 'Brygada 1918', serif;
-    font-weight: 600;
-    font-size: 1em;
-    margin-bottom: 5%;
-    list-style: none;
-    position: sticky;
-    padding: 0;
-}
-
-
 .content {
     flex-grow: 1;
     flex-basis: 90%;
