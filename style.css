@@ -15,7 +15,7 @@ body {
 
 @media screen and (width >=600px) {
     body {
-        font-size: 24px;
+        font-size: 32px;
     }
 }
 
@@ -32,7 +32,7 @@ header {
 }
 
 main {
-    flex-grow: 1;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -46,15 +46,12 @@ main {
     box-sizing: border-box;
 }
 
-.chapter {
-    margin: 0 auto;
-    max-width: 50em;
-}
-
 .content {
     flex-grow: 1;
     flex-basis: 90%;
     padding: 1em;
+    margin: 0 auto;
+    max-width: 50em;
     overflow-wrap: break-word;
 }
 
@@ -76,11 +73,6 @@ main {
     text-transform: capitalize;
     font-size: 0.5em;
     color: #bb4610;
-}
-
-.content {
-    margin-left: 3rem;
-    margin-right: 3rem;
 }
 
 em {
