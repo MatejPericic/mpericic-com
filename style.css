@@ -13,13 +13,13 @@ body {
     background-color: #FFFFF8;
 }
 
-@media screen and (width >= 600px) {
+@media screen and (width >=600px) {
     body {
         font-size: 24px;
     }
 }
 
-@media screen and (width >= 900px) {
+@media screen and (width >=900px) {
     body {
         font-size: 16px;
     }
@@ -40,7 +40,6 @@ main {
 .wrapper {
     display: flex;
     flex-direction: row;
-    margin: auto;
     align-self: start;
     flex-grow: 1;
     width: 100%;
@@ -49,14 +48,14 @@ main {
 
 .chapter {
     margin: 0 auto;
-    max-width: 50rem;
+    max-width: 50em;
 }
 
 .sidebar {
     background-color: #e7ccc0;
     padding: 0 2%;
     flex: 1;
-    flex-basis: 10vw;
+    flex-basis: 10%;
     box-sizing: border-box;
 }
 
@@ -71,7 +70,8 @@ main {
 .sidebar-nav {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
+    margin: auto 0%;
     position: sticky;
     top: 0;
 }
@@ -90,7 +90,7 @@ main {
 
 .content {
     flex-grow: 1;
-    flex-basis: 90vw;
+    flex-basis: 90%;
     padding: 1em;
     overflow-wrap: break-word;
 }
@@ -188,7 +188,7 @@ p {
     color: #bb4610;
     margin: 1.5rem 2rem;
     font-weight: 500;
-    max-width: 40rem;
+    max-width: 40em;
 }
 
 .smcap {
