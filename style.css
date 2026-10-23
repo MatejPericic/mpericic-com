@@ -83,21 +83,6 @@ main {
     margin-right: 3rem;
 }
 
-h3 {
-    font-family: 'Grenze Gotisch', serif;
-    font-weight: 500;
-    font-size: 1.5em;
-    margin-bottom: 1rem;
-    color: #bb4610;
-}
-
-.content h3 {
-    font-family: 'Brygada 1918', serif;
-    font-weight: 600;
-    font-size: 1.2em;
-    margin-bottom: 1rem;
-}
-
 em {
     font-weight: 500;
     color: #bb4610;
