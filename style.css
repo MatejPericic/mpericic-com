@@ -1,75 +1,203 @@
 body {
-  margin: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Brygada 1918', serif;
+    font-optical-sizing: auto;
+    line-height: 1.5;
+    color: #111827;
+    background-color: #FFFFF8;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  height: 100vh;
-  background: #ffffff;
-  color: #111827;
-  font-family: "Space Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 16px;
-}
-
-.header-links {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  background: #111827;
-}
-
-.header-links a {
-  margin: 1rem;
-  color: #F75000;
-}
-
-.header-links a:hover {
-  color: #f8d0bd;
-}
-
-.header-links a:visited {
-  color: #f8fafc;
+header {
+    text-align: center;
+    flex-basis: 10%;
+    box-sizing: border-box;
 }
 
 main {
-  flex-basis: 80%;
-  margin: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.main-eyecatcher {
-  max-width: 40%;
-  margin: auto;
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-self: start;
+    flex-grow: 1;
+    box-sizing: border-box;
 }
 
-.main-eyecatcher h1 {
-  margin-bottom: 1rem;
-  font-size: 2.25rem;
-  color: #F75000;
-  font-family: "Fraunces", serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-variation-settings:
-    "SOFT" 100,
-    "WONK" 1;
+.sidebar {
+    background-color: #e7ccc0;
+    padding: 1rem;
+    flex: 1;
+    flex-basis: 10vw;
+    box-sizing: border-box;
 }
 
-.main-eyecatcher img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
+.content {
+    flex-grow: 1;
+    flex-basis: 90vw;
+    padding: 1rem;
+    overflow-wrap: break-word;
+    margin-right: 3rem;
 }
 
-.footer-content {
-  margin: 1rem;
-  justify-content: flex-end;
-  justify-self: flex-end;
+.chapter {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+h1 {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.sidebar h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #bb4610;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    max-height: fit-content;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar-nav ul, .sidebar-nav li {
+    font-family: 'Brygada 1918', serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 2%;
+    list-style: none;
+    position: sticky;
+    padding: 0;
+}
+
+.content h2 {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 500;
+    font-size: 2.25rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+    color: #bb4610;
+}
+
+.content h2 small {
+    display: block;
+    font-family: 'Brygada 1918', serif;
+    font-weight: 600;
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #bb4610;
+}
+
+.content {
+    margin-left: 3rem;
+}
+
+h3 {
+    font-family: 'Grenze Gotisch', serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #bb4610;
+}
+
+.content h3 {
+    font-family: 'Brygada 1918', serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+em {
+    font-weight: 500;
+    color: #bb4610;
+    font-variant: small-caps;
+    font-size: 115%;
+    font-style: initial;
+    white-space: pre;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-indent: 2rem;
+}
+
+.letra {
+    margin: auto;
+    text-align: center;
+}
+
+.nind {
+    margin-bottom: 1rem;
+    text-indent: initial;
+}
+
+.sidebar a {
+    color: #66270a;
+    font-weight: 400;
+}
+
+.sidebar a:hover {
+    color: #bb4610;
+}
+
+.nind::first-letter {
+    font-size: 1.5rem;
+    initial-letter: 2;
+    font-weight: 500;
+    margin-right: 0.3rem;
+    color: #bb4610;
+}
+
+.stanza {
+    text-align: right;
+    margin-bottom: 1rem;
+    font-variant: small-caps;
+    font-size: 1.2rem;
+    white-space: pre;
+    color: #bb4610;
+}
+
+.blockquot {
+    color: #bb4610;
+    margin: 1.5rem 2rem;
+    font-weight: 500;
+    max-width: 40rem;
+}
+
+.smcap {
+    font-variant: small-caps;
+}
+
+.r {
+    white-space: pre;
+    text-align: right;
+}
+
+.c {
+    text-align: center;
+}
+
+.cb {
+    text-align: center;
+    font-weight: 800;
 }
