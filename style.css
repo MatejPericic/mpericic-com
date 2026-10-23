@@ -8,10 +8,21 @@ body {
     flex-direction: column;
     font-family: 'Brygada 1918', serif;
     font-optical-sizing: auto;
-    font-size: 24px;
     line-height: 1.5;
     color: #111827;
     background-color: #FFFFF8;
+}
+
+@media screen and (width >= 600px) {
+    body {
+        font-size: 24px;
+    }
+}
+
+@media screen and (width >= 900px) {
+    body {
+        font-size: 16px;
+    }
 }
 
 header {
@@ -32,6 +43,7 @@ main {
     margin: auto;
     align-self: start;
     flex-grow: 1;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -51,7 +63,7 @@ main {
 
 .sidebar h2 {
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 10%;
     color: #bb4610;
 }
@@ -79,9 +91,8 @@ main {
 .content {
     flex-grow: 1;
     flex-basis: 90vw;
-    padding: 1rem;
+    padding: 1em;
     overflow-wrap: break-word;
-    margin-right: 3rem;
 }
 
 .content h2 {
@@ -100,7 +111,7 @@ main {
     font-weight: 600;
     text-align: left;
     text-transform: capitalize;
-    font-size: 1em;
+    font-size: 0.5em;
     color: #bb4610;
 }
 
@@ -160,7 +171,7 @@ p {
     font-size: 1.5em;
     initial-letter: 2;
     font-weight: 500;
-    margin-right: 0.3rem;
+    margin-right: 0.3em;
     color: #bb4610;
 }
 
