@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     font-family: 'Brygada 1918', serif;
     font-optical-sizing: auto;
+    font-size: 24px;
     line-height: 1.5;
     color: #111827;
     background-color: #FFFFF8;
@@ -34,13 +35,46 @@ main {
     box-sizing: border-box;
 }
 
+.chapter {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
 .sidebar {
     background-color: #e7ccc0;
-    padding: 1rem;
+    padding: 0 2%;
     flex: 1;
     flex-basis: 10vw;
     box-sizing: border-box;
 }
+
+
+.sidebar h2 {
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 10%;
+    color: #bb4610;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar-nav ul,
+.sidebar-nav li {
+    font-family: 'Brygada 1918', serif;
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 5%;
+    list-style: none;
+    position: sticky;
+    padding: 0;
+}
+
 
 .content {
     flex-grow: 1;
@@ -50,48 +84,10 @@ main {
     margin-right: 3rem;
 }
 
-.chapter {
-    margin: 0 auto;
-    max-width: 50rem;
-}
-
-h1 {
-    font-family: 'Grenze Gotisch', serif;
-    font-weight: 800;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.sidebar h2 {
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #bb4610;
-}
-
-.sidebar-nav {
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-    max-height: fit-content;
-    position: sticky;
-    top: 0;
-}
-
-.sidebar-nav ul, .sidebar-nav li {
-    font-family: 'Brygada 1918', serif;
-    font-weight: 600;
-    font-size: 1rem;
-    margin-bottom: 2%;
-    list-style: none;
-    position: sticky;
-    padding: 0;
-}
-
 .content h2 {
     font-family: 'Grenze Gotisch', serif;
     font-weight: 500;
-    font-size: 2.25rem;
+    font-size: 2.25em;
     text-align: center;
     margin-bottom: 1rem;
     text-transform: lowercase;
@@ -104,7 +100,7 @@ h1 {
     font-weight: 600;
     text-align: left;
     text-transform: capitalize;
-    font-size: 1rem;
+    font-size: 1em;
     color: #bb4610;
 }
 
@@ -115,7 +111,7 @@ h1 {
 h3 {
     font-family: 'Grenze Gotisch', serif;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     margin-bottom: 1rem;
     color: #bb4610;
 }
@@ -123,7 +119,7 @@ h3 {
 .content h3 {
     font-family: 'Brygada 1918', serif;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     margin-bottom: 1rem;
 }
 
@@ -131,7 +127,7 @@ em {
     font-weight: 500;
     color: #bb4610;
     font-variant: small-caps;
-    font-size: 115%;
+    font-size: 1.15em;
     font-style: initial;
     white-space: pre;
 }
@@ -161,7 +157,7 @@ p {
 }
 
 .nind::first-letter {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     initial-letter: 2;
     font-weight: 500;
     margin-right: 0.3rem;
@@ -172,7 +168,7 @@ p {
     text-align: right;
     margin-bottom: 1rem;
     font-variant: small-caps;
-    font-size: 1.2rem;
+    font-size: 1.2em;
     white-space: pre;
     color: #bb4610;
 }
